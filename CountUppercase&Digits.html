@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+      <script>
+  function Ucount()
+        {
+        var i;
+        var c=0;
+        var a=document.getElementById("ch").value;
+        for(i=0;i<a.length;i++)
+          {
+           if(a.charCodeAt(i)>=65 && a.charCodeAt(i)<=90)
+           c++;
+        }
+         alert("Uppercase characters = "+c);
+                                          
+        }
+  
+   function Dcount()
+        {
+        var i;
+        var c=0;
+        var a=document.getElementById("ch").value;
+        for(i=0;i<a.length;i++)
+          {
+           if(a[i]>=0 && a[i]<=9 && a[i]!=' ')
+           c++;
+        }
+         alert("Digits = "+c);
+                                          
+        }
+      
+      
+      </script>
+    </head>
+
+    <body>
+      <p>Enter some text:</p>
+      <input type="text" id="ch">
+      <button type="button" onclick="Ucount();">Uppercase
+      </button>
+       <button type="button" onclick="Dcount();">Digit
+      </button>
+     
+      </body>
+</html>
