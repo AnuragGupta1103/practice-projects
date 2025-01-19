@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: black;
+}
+
+.nav-bar > div {
+    margin-left: 30px;
+    color: orangered;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border: none;
+}
+
+li a:hover{
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+.login {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.login a {
+    color: orangered;
+}
