@@ -1,0 +1,569 @@
+HTML - Hyper text markup language
+
+	Defines the structure
+Components used to design the structure of websites is called HTML tags.
+Boiler plate code
+
+<p> - Paragraph tag
+<head> - the data inside this tag is no visible on the wepage
+	In this we can give title to the webpage using <title> tag.
+<html> - parent of head and body tag
+<br> - breakline tag (no opening and closing tag)
+	To add a new line (empty tag - have no attributes in it)
+
+* Comments : (code nahi hota, english hota hai)
+	This is the that part of the code which is not parsed. 
+
+HTML is not case sensitive.
+
+* Attributes :
+	Used to add more information to the tag.
+
+<html lang="en"> -- (lang - attribute; en = english)
+
+* Heading Tag : Used to display headings in HTML
+h1 - used to write most important thing.
+
+* Paragraph tag : to add paragraphs in html
+
+* Anchor tag : Used to add links to your page
+<a href="https://google.com"> Google </a>
+ (relative link and absolute link)
+target attribute can have one of the following values: 
+_self
+_blank
+_parent
+_top
+
+<a href="mailto:abc@gmail.com"> </a>
+(it will open the user's email program)
+-> An unvisited link is blue, visited link is purple, active link is red.
+-> Hover
+
+* Image tag : Used to add images to your page
+Has two attributes : src - specifies the path to the image, alt - specifies an alternate text for the image.
+<img src="/image.png" alt="Random Image">
+(upwards is relative url)
+
+We can also change the height and width of the image using "height and width" attributes.
+
+* Bold, Italic, Underline tags : Used to highlight text 
+
+<b> </b> -- Bolds the text
+<i> </i> -- Italic
+<u> </u> -- Underlines the text
+
+* Big and Small tags : Used to display big & small text on your page
+
+<big> Big </big>
+<small> </small>
+
+* Hr Tag : used to display a horizontal ruler, used to separate content.
+
+<hr>
+
+* Subscript & superscript Tag :
+
+<sub> subscript </sub>
+<sup> superscript </sup>
+
+* Pre Tag : Used to display text as it is (without ignoring spaces & next line)
+
+<pre> This is a sample text </pre>
+
+* Layouts on html :
+1.) Page Layout Techniques using semantic tags (jismein hame samajh aa rha hai ye tag konsa hai) :
+	<header>
+	<main>
+	<footer>
+
+(non-semantic : div, span)
+(to improve SEO, we should use semantic tags as they are readable.)
+
+Inside Main Tag :
+	--> section tag (<section>)
+	--> Article tag (<article>)
+	--> Aside tag (for content aside main contant(ads))
+		<aside>
+
+
+* Revisiting Anchor tag :
+<a href=" " target="_blank"> </a>	-- for new tab
+<a href=" "> <img src="image_link"> </a>
+
+* Revisiting Image Tag :
+<img src="image_link" height=50px>
+<img src="image_link" width=50px>
+
+* Div Tag : Div is a container used for other HTML elements. (agar kaafi elements ki arrangement karni ho)
+It is Block Element (takes full width)
+
+Inline Elements - takes necessary width.
+
+BLOCK TAGS --
+	Eg, <article>, <aside>, <blockquote>, div, fieldset, footer, form, h1 to h6, header, hr, li, main, ol, pre
+
+* Span Tag : Used for Inline Elements.
+Inline TAGS --
+	Eg, <a>, <b>, <big>, <br>, <button>, code, em, <i>, img, script, small, span, strong, sub, sip.
+
+* List in HTML :
+1.) Unordered : (bullet points(disc) by default)
+	<ul>
+		<li>  Apple </li>
+		<li> Mango </li>
+	</ul>
+(circle, disc, squares)
+
+2.) Ordered : (Numerals / Roman-numbers / alphabets)
+	<ol>
+		<li> Apple </li>
+		<li> Mango </li>
+	</ol>
+
+* Tables in HTML :
+<tr> - Used to display table row
+<td> - Used to display table data
+<th> - Used to display table header
+
+<caption> -- Tells what's happening in the table.
+<thead> - to wrap table head
+<tbody> - to  wrap table body
+
+colspan=" " -> used for merging two or more columns
+
+* Forms in HTML : Used to collect data from the user
+<form>
+	form content
+</form>
+
+Action in form - action attribute is used to define what action needs to be performed when a form is submitted.
+<form action=" ">
+
+Form Element : Input
+<input type="text" placeholder="Enter Name">
+<input type="password">
+
+Label : input element ko dena (agar text pe bhi click kare toh ho jayega)
+<label for="id1">
+	<input type="radio" value="class X" name="class" id="id1">
+</label>
+(radio buttons are not for multiple options)
+(value and jo print kar rhe hai vo same hpna chahiye)
+
+* Class & Id :
+id - unique
+class - can be same.
+
+<input type="checkbox"> - to select multiple things
+
+<textarea name="feedback" placeholder="please give your valuable feedback her" rows=5>
+
+* Select : 
+<select name id>
+	<option> </option>
+</select>
+
+<input type="submit" value="submit">
+
+* iframe Tag : website inside website
+<iframe src="link">
+
+* Video Tag :
+<video src="myVid.mp4"> My Video </video>
+
+Attributes :-
+- controls
+- height
+- width
+- loop
+- autoplay
+
+
+(In HTML, spaces and new lines are ignored)
+-----------------------------------------------------------------
+* HTML Quotation and citation elements :
+a. <blockquote> -- defines a section that is quoted from another source.
+b. <q> -- defines a short quotation (" ").
+c. <abbr> -- defines an abbreviation like "HTML", "Dr."
+d. <address> -- defines the contact information for the author/owner of a document or an article.
+(The text in this tag usually is in italic, browsers will add a line break before and after the element)
+e. <cite> -- tag defines the title of a creative work. Eg, a book, a poem ---- a person's name is not the title of a work.
+(text is in italic)
+f. <bdo> -- tag is used to override the current text direction.
+	<bdo dir="rtl"> </bdo> -- rtl means right to left
+
+* Button as a Link :
+<button onclick="document.location='link'"> </button>
+
+------------------------------------------------------------------
+
+* Style Attribute : properties - 
+a. color(it's text color) -- can be specified using "RBGA" values, "HEX" values
+b. font-size --> Defines the text size
+c. background-color
+d. font-family --> defines the font to be used
+e. text-align: center	--> defines the horizontal text alignment
+f. border: border-thickness border-type color
+
+{by default, <p> tag uses "16px" as top and bottom margin and <h1> tag uses "21.44px" as margin.}
+{The size in percentage we give to font-size comes out to be half of the percentage times the original size of the element(32px)}
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+=> CSS - Cascading Style Sheets(.css)
+
+CSS can be added to HTML documents in 3 ways: Inline, Internal, External
+Using <link rel="stylesheet" href="filename.css"> -- used to link external css file to the main file.
+
+CSS Properties :
+* padding  -- defines a space between the text and the border.
+* margin -- defines a space outside the border. (margin: top right bottom left; or margin: top-bottom right-left;)
+* text-decoration: none; --> produces no line
+* display: value;
+(value = block, inline-block, inline)
+* float: right --> it will make it float to right.
+float: left
+* background-image: url(' ');	--> specifies the background-image
+	The image will repeat itself if it is smaller than the element size. So, to avoid image from repeating itself, set "background-repeat: no-repeat;".
+* To cover the entire element, set the "background-size: cover".
+* background-attachment: fixed"  --> entire element is always covered.
+* To make the background image to stretch to fit the entire element, set background-size: 100% 100%.
+* border-collapse : collapse;
+	(to avoid having double borders)
+* border-radius --> the borders get rounded corners
+* border-style : values
+	(values = dotted, dashed, solid, double, groove, ridge, none, hidden, inset, outset)
+* border-color --> used to set the color of the border
+* Table Styling --> to style every other table row element, use ":nth-child(even)" selector
+* border-bottom --> specifies border only at the bottom
+* overflow: hidden;
+* font-style: italic
+
+** The width and height attributes always define the width and height of the image in pixels.
+** Width in style tag used as internal css will override the width written as attribute in image tag. But when written as inline css, it will not override. 
+--------------------------------------------------------------------------
+Create a Bookmark :
+* use the "id" attribute and in href access id with '#'.
+
+HTML image Maps : 
+helps to create clickable areas on an image.
+* It's written in <img> tag and a new attribute "usemap" is added. "usemap" value starts with a hash tag followed by the name of the image map, and creates a relationship between the image and the image map.
+* Create Image map :
+<map> element is used to create an image map, and is linked to the image by using the "name" attribute.
+The name attribute must have the same value as the <img>'s usemap attribute.
+* Areas :
+A clickable area is defined using an <area> element.
+* Shape :	  You must define the shape of the clickable area :-
+	rect - rectangular region
+		coords="left,right - top left, left, right -bottom right"
+	circle - circular region
+		first locate the coorinates of center of circle.
+		coords="center coordinates, radius of circle"
+	poly - polygonal region
+	default - entire region
+
+* <img usemap="#amap">
+<map name="amap">
+<area shape="rect" coords=" " href=" ">
+
+* We can also add 'onlick="myFunc()"' event to execute a Javascript function.
+
+HTML Picture Element :
+* <picture> element contains one or more <source> elements, each refering to different images through the "srcset" attribute. This way the browser can choose the image that fits best the current view.
+Each <source> element has a "media" attribute --> defines when the image is the most suitable.
+
+Favicon :
+* It is a small image displayed next to the title of the page in the browser tab.
+* Add a <link> element to html file after the <title> element, like -
+<link rel="icon" type="image/x-icon" href="path_image">
+
+Tables :
+* td - table data
+	tr - table row
+	th - by default, text in <th> elements are bold and centered.
+* <caption> - defines a table caption
+* width and height can be used in table rows and cols.
+* Hoverable table --
+	tr:hover{property: value;}
+
+Description Lists :
+* It is a list of terms, with a description of each term.
+* <dl> - description list
+	<dt> - term name
+	<dd> - descibes each term
+
+Using the class Attribute :
+* accesable through "."
+* class name is case sensitive
+* to define multiple classes, separate the class names with a space. The element will be styled according to all the classes specified.
+* In javascript classes can be used:
+document.getElementsByClassName("class_name").
+	to hide the elements, we use :
+		x[i].style.display = "none";
+
+Using The id Attribute :
+* The id attribute specifies a unique id for an HTML element.
+* The syntax for id is: #, followed by id name.
+* The id name is case sensitive.
+* The id name should not start with a number and must not contain whitespaces.
+* In javascript :
+	document.getElementById("id_name").innerHTML; --> makes changes in that very tab
+
+HTML iframe Syntax :
+* inline frame is used to embed another document within the current HTML document.
+* <iframe src="url" title="description"></iframe>
+
+HTML noscript Tag :
+* <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts.
+
+File Paths:
+1. Absolute file Path - it is the full URL to a file.
+2. Relative file Path - it points to a file relative to the current page.
+
+HTML <head> Element : It is a container for metadata (data about data).
+
+HTML <title> Element : defines the title of the document.
+* The contents of a page title is very important for search engine optimization.
+* This element :
+	- defines a title in the browser toolbar
+	- provides a title for the page when it is added to favourites.
+	- displays a title for the page in SEO's.
+
+HTML <link> Element : defines the relationship between the current document and an external resource.
+
+HTML <meta> Element :
+* <meta charset="UTF-8">	--> define the character set used
+* <meta name="keywords" content="HTML, CSS, Javascript">	--> define keywords for search engines.
+* <meta name="author" content="Anurag Gupta">	-->define the author of a page
+* <meta http-equiv="refresh" content="30">	--> refresh document every 30 seconds.
+* <meta name="viewport" content="width=device-width, initial-scale=1.0">	--> setting the viewport to make your website look good on all devices.
+
+HTML Layout Elements :
+	<header>, <nav>, <section>, <article>, <aside>, <footer>, <details>, <summary>
+
+Responsive Text Size :
+The text size can be set with a "vw" unit, which means "viewport width".
+1 vw = 1% of viewport width.
+
+
+HTML Computer Codes :
+1. <kbd> - used to define keyboard input. content inside is displayed in the browser's default monospace font.
+2. <samp> - used to define sample output from a computer program.
+3. <code> - used to define a piece of computer code. It does not preserve extra whitespace and line-breaks.
+4. <var> - used to define a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.
+5. <pre> - defines preformatted text
+
+Semantic Elements : It describes its meaning to both the browser and the developer.
+
+HTML <section> Element : defines a section in a element.
+Examples :
+	- Chapters
+	- Introduction
+	- News Items
+	- Contact Information
+
+
+HTML <article> Element : specifies independent, self contained content.
+Examples :
+	- Forum posts
+	- Blog posts
+	- User comments
+	- Product cards
+	- Newspaper articles
+
+
+HTML <header> Element : represents a container for introductory content or a set of navigational links.
+Examples -
+	- heading elemets (<h1> - <h6>)
+	- logo or icon
+	- authorship information
+Header element cannot be placed within another tag elements.
+
+HTML <footer> Element : defines a footer for a document or section.
+Examples :
+	- copyright information
+	- contact information
+	- back to top links
+
+
+HTML <nav> Element : defines a set of navigation links.
+
+HTML <aside> Element : defines some content aside from the content it is places in (like a sidebar).
+
+HTML Entities :
+1. &lt; --> to display a less than sign (<)
+2. &nbsp; --> Non-breaking space
+3. &#8209 --> hyphen character (-)
+4. &gt; --> greater than sign (>)
+5. &amp; --> ampersand (&)
+6. &apos; --> single quotation mark (')
+
+Emojis are also characters from the UTF-8 alphabet.
+&128151; --> heart emoji
+
+ASCII Character Set :
+control characters - 0 to 31 (and 127)
+letters, digits, symbols - 32 to 126
+
+URL (uniform resource locator) : another word for web address.
+Syntax :
+	scheme://prefix.domain:port/path/filename
+
+
+HTML Forms :
+* Input fields - default width of input text fields is 20 characters.
+* <label> element - "for" attribute should be equal to the "id" attribute of the input element to bind them together.
+	Using label attribute, we can even click on the names written in label tag.
+* "Name" attribute for <input> --> if name attribute is not written, the value of the output field will not be sent at all.
+* Action Attribute --> defines the action to be performed when the form is submitted.
+Usually, the form data is sent to a file on the server.
+If the action attribute is omitted, action is set to the current page.
+* Target Attribute --
+	_blank = displayed in new window or tab
+	_self = displayed in the current window
+	_parent = displayed in the parent frame
+	_top = displayed in the full body of the window.
+* Method Attribute -- specifies the HTTP method to be used when submitting the form data.
+The form data can be sent as URL variables (method="get") or as HTTP post (method="post")
+
+HTML <form> Elements : <input>, <label>, <select>, <textarea>, <button>, <fieldset>, <legend>, <option>
+* <select> Element :-
+	To define a pre-selected option, add the "selected" attribute to the option. 
+	"size" attribute --> used to specify the number of visible values.
+	"multiple" attribute --> used to allow the user to select more than one value.
+* <output> --> represents the result of a calculation.
+	
+
+HTML Input Types :->
+1. button 2. checkbox 3. text 4. number 5. color 
+6. password 7. email 8. submit 9. reset 10. date 
+11. time 12. range 13. datetime-local 14. file 15. month 
+16. radio 17. tel 18. url 19. week 20. image 21. hidden
+
+* Attributes :
+- disabled
+- max
+- min
+- maxlength
+- required
+- checked
+- value --> specifies the default for an input field.
+- pattern --> specifies a regular expression to check the input value against.
+	in type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+- readonly --> specifies that an input field should be read-only (cannot be changed)
+- size --> specifies the visible width, in characters, of an input field.
+- multiple --> allows the user to enter more than one value in an input field.
+- autofocus --> input field should automatically get focused when the page loads.
+
+
+HTML Canvas : Canvas is a rectangular area on the html page. By default, a canvas has no border and no content.
+* To get a straight line -
+	var ctx = c.getContext("2d");
+        	ctx.moveTo(0,0);
+        	ctx.lineTo(200,100);
+        	ctx.stroke();
+* To get a circle -
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(95,50,40,0,2*Math.PI);
+	ctx.stroke();
+* To print a simple text -
+	ctx.font = "30px Arial"
+	ctx.fillText("Hello World", 10, 50);
+
+
+HTML <video> :
+Attributes - controls, autoplay, muted, loop
+
+
+---------------------------------------------
+CSS -->
+
+* The class name cannot start with a number.
+* The universal selector (*) selects all HTML elements.
+* Do not add a space between the property value and the unit.
+
+* CSS Backgrounds :- 
+[shorthand --> background: background-color background-image background-repeat background-attachment background-position]
+
+1. background-color --> specifies the background color of an element.
+2. Opacity --> specifies the opacity/transparency of an element. It can take a value from 0.0 (fully transparent) - 1.0 (fully opaque).
+3. Background-image --> specifies an image to use as the background of an element.
+(background-image: url(""))
+When using a background image, use an image that does not disturb the text.
+4. background-repeat --> repeates an image both horizontally and vertically.
+Values -->
+	a.) repeat-x : If image is repeated horizontally
+	b.) repeat-y : If image is repeated vertically
+	c.) no-repeat : the background image is placed in the same place as the text
+5. background-position --> used to specify the position of the background image.
+6. background-attachment --> specifies whether the background image should scroll or be fixed.
+	a.) background-attachment: fixed --> will make the pic fixed and remaining content will only be moved.
+	b.) scroll --> image will scroll with the rest of the page.
+
+* CSS Borders :-
+[shorthand - border: border-width border-style border-color]
+
+1. border-style: value;
+	solid, dashed, dotted.
+2. border-width --> specifies the width of the four borders.
+3. border-color --> used to set the color of the four borders.
+If it is not set, it inherits the color of the element.
+It can have from one to four values (top, right, bottom, left).
+4. border-radius --> used to add rounded borders to an element.
+
+* CSS Margins :- Margins are used to create space around elements, outside of any defined borders.
+Values -->
+	auto - the browser calculates the margin
+	length - specifies a margin in px, pt, cm
+	% - specifies a margin in % of the width of the containing element.
+	inherit - specifies that margin should be inherited from the parent element.
+
+* CSS Padding :- Padding is used to create space around an element's content, inside of any defined borders.
+padding: padding-top padding-right padding-bottom padding-left
+
+{The total width of an element = width + left padding + right padding + left border + right border + left margin + right margin}
+
+* CSS Outline :- outline is a line drawn outside the element's border.
+1. outline-style --> specifies the style of the outline, and the values are :
+	dotted, dashed, solid, double
+2. outline-width --> specifies the width of the outline, values :
+	thin, medium, thick
+3. outline-color --> used to set the color of the outline
+4. outline-offset --> adds space between an outline and the edge/border of an element.
+The space between an element ans its outline is transparent.
+
+* CSS Text Alignment and Text Direction :
+1. text-align --> used to set the horizontal alignment of a text. It can be right aligned, centered, justified.
+2. text-align-last --> specifies how to align the last line of the text.
+3. direction: rtl --> used to change the text direction of an element.
+unicode-bidi: bidi-override --> changes the text direction.
+4. vertical-align --> sets the vertical alignment of an element.
+value --> baseline, text-top, text-bottom, sub, super.
+
+* CSS Text Decoration :-
+1. text-decoration-line --> used to add a decoration line to text.
+value -> overline, line-through, underline.
+2. text-decoration-color --> used to set the color of the decoration line.
+3. text-decoration-style --> used to set the style of decoration line. (wavy)
+4. text-decoration-thickness --> used to set the thickness of the decoration line.
+[text-decoration: none; --> used to remove the underline from links]
+
+
+* display: flex;
+justify-content: space-between;
+position: fixed/absolute;
+background-image: linear-gradient/radial-gradient;
+z-index: 1;
+display: inline-block;
+
+
+
+
+
+
+
+
+
+
